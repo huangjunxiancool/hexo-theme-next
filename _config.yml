@@ -395,7 +395,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC8zNzQ3NC8xNDAwNg==#your uid
+livere_uid: MTAyMC8zNzQ3NC8xNDAwNg==
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
@@ -532,8 +532,8 @@ rating:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
-  app_id: yPEGB0yBp6wT0JAHCz28V7lj-gzGzoHsz#<app_id>
-  app_key: 3brHzqy6pvxCSqMrGRgx1EP0#<app_key>
+  app_id: yPEGB0yBp6wT0JAHCz28V7lj-gzGzoHsz
+  app_key: 3brHzqy6pvxCSqMrGRgx1EP0
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
