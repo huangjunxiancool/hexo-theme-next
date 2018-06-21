@@ -26,11 +26,12 @@ override: false
 
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
-favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
+favicon: 
+  small: /images/favicon-small.jpg
+  medium: /images/favicon-small.jpg
+  #/images/favicon-32x32-next.png
   apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
+  #safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -40,7 +41,7 @@ keywords: "博客,编程,生活,学习,写作"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: /atom.xml
 
 footer:
   # Specify the date when the site was setup.
@@ -54,7 +55,7 @@ footer:
   copyright:
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
-  powered: true
+  powered: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
@@ -98,7 +99,7 @@ menu:
   categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
-  sitemap: /sitemap.xml || sitemap
+  #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
 
 # Enable/Disable menu icons.
@@ -111,9 +112,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 #scheme: Gemini
 
 
@@ -129,8 +130,8 @@ scheme: Muse
 social:
   GitHub: https://github.com/huangjunxiancool || github
   E-Mail: mailto:huangjunxiancool@gmail.com || envelope
-  Weibo: https://weibo.com/u/2368601392
-  Jianshu: https://www.jianshu.com/u/5699d23f47c6
+  微博: https://weibo.com/u/2368601392
+  简书: https://www.jianshu.com/u/5699d23f47c6
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -144,14 +145,19 @@ social_icons:
   enable: true
   icons_only: false
   transition: false
+  GitHub: github
+  微博: weibo
+  简书: heartbeat
 
 # Blog rolls
 links_icon: link
-links_title: Links
-links_layout: block
-#links_layout: inline
-#links:
+links_title: 友情链接
+#links_layout: block
+links_layout: inline
+links:
+  简书: https://www.jianshu.com/u/5699d23f47c6
   #Title: http://example.com/
+  
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -218,8 +224,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: true
-  length: 150
+  enable: false
+  length: 500
 
 # Post meta display settings
 post_meta:
@@ -232,9 +238,9 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
-  totalcount: false
+  wordcount: true
+  min2read: true
+  totalcount: true
   separated_meta: true
 
 # Wechat Subscriber
@@ -245,8 +251,8 @@ post_wordcount:
 
 # Reward
 reward_comment: 生命不息，学习不止，您的支持是对我最大的肯定！
-wechatpay: /images/wechatpay.jpg
-alipay: /images/alipay.jpg
+wechatpay: /images/wechatpay.png
+alipay: /images/alipay.png
 #bitcoin: /images/bitcoin.png
 
 # Declare license on posts
@@ -408,7 +414,7 @@ gitment:
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
-  language: # Force language, or auto switch by theme
+  language: zh-Hans # Force language, or auto switch by theme
   github_user: # MUST HAVE, Your Github ID
   github_repo: # MUST HAVE, The repo you use to store Gitment comments
   client_id: # MUST HAVE, Github client id for the Gitment
@@ -427,12 +433,12 @@ gitment:
 # This plugin is more useful in China, make sure you known how to use it.
 # And you can find the use guide at official webiste: http://www.jiathis.com/.
 # Warning: JiaThis does not support https.
-#jiathis:
+#jiathis: true
   ##uid: Get this uid from http://www.jiathis.com/
 #add_this_id:
 
 # Share
-#duoshuo_share: true
+duoshuo_share: true
 
 # NeedMoreShare2
 # This plugin is a pure javascript sharing lib which is useful in China.
@@ -771,12 +777,12 @@ vendors:
   # Or use direct links below:
   # pace: //cdn.bootcss.com/pace/1.0.2/pace.min.js
   # pace_css: //cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css
-  pace:
+  pace: true
   pace_css:
 
   # Internal version: 1.0.0
   # https://github.com/hustcc/canvas-nest.js
-  canvas_nest:
+  canvas_nest: true
 
   # three
   three:
